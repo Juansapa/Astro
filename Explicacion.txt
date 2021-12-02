@@ -1,6 +1,0 @@
-Principalmente se agregó al sitio varias keywords para hacer referencia a los contenidos que se venderían en la pagina y mismo, a que uso estan destinados.
-Los titulos ya estaban por lo que no precise agregar ninguno.
-En las secciones de Hombres y Mujeres tengo pensado (ahora no lo hice ya que no supe como aplicarlo) agregar un encabezado que se situe en el banner.
-En las paginas de Index y Nosotros no hizo falta ya que el mismo estaba.
-
-Por ultimo se agrego el Sitemap.xml

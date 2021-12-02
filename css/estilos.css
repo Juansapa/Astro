@@ -10,6 +10,7 @@
   -ms-transition: opacity 500ms;
   transition: opacity 500ms; }
 
+
 /*Carrusel*/
 .Carrusel {
   width: 100%; }
@@ -26,10 +27,6 @@ a {
   .textoLogo a {
     color: #16114b; }
 
-body {
-  color: #16114b; }
-  body p {
-    color: black; }
 
 .Nosotros {
   font-family: 'Poppins'; }
@@ -55,6 +52,12 @@ span {
 .CardsSombra {
   box-shadow: 2px 2px 2px 2px grey;
   width: 18rem; }
+
+/*Secciones*/
+
+.FondoIntercalado {
+  background-color: #afdaaf;
+}
 
 /*Nosotros*/
 @media screen and (max-width: 770px) {
