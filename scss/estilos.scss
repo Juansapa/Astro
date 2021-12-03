@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+/*NAV*/
+
+
+
+/*Animacion*/
+
+.desvanecer:hover {
+    opacity: 0.07;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+/*Carrusel*/
+
+.Carrusel {
+    width: 100%;
+   
+}
+
+
+
+/*Textos*/
+
+
+$ColorPrincipal: rgb(22, 17, 75); 
+
+a { color:  $ColorPrincipal } 
+
+.textoLogo {
+    color: rgb(15, 11, 56);
+    text-shadow: 2px 2px 3px white;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Righteous', cursive;
+    a { color: $ColorPrincipal } 
+
+}
+
+body {
+    color: $ColorPrincipal;
+    p {
+        color: black;
+    }
+}
+
+.Nosotros {
+    font-family: 'Poppins';
+    }
+
+span {
+    font-size:3em;
+	font-family:serif;
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.TextoDentro{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:rgb(80, 218, 80);
+    width: 30%;
+}
+
+/*CARDS*/
+
+.CardsSombra {
+    box-shadow: 2px 2px 2px 2px grey;
+    width: 18rem;
+}
+
+/*Nosotros*/
+
+
+
+@media screen and (max-width:770px) {
+    .categorias {
+        margin-bottom: 30px;
+    }
+    .icon {
+        justify-content: center;
+    }
+}
