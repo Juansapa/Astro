@@ -10,64 +10,56 @@
     <title>AstroShop - Contacto</title>
 </head>
 <body>
-    <div>
-        <header class="container-fluid p-3 mb-3 bg-success">
-            <div class="container-fluid mb-3">
-                <div class="row">
-                    <div class="col-md-4 d-inline-flex">
-                    <a class="desvanecer" href="Index.html"><img src="imagen/estrella.png" width=120></a>
-                    <h1 class="textoLogo d-inline-flex align-items-end"> ASTRO </h1>
-                    </div>
-                    <nav class="col-md-4 navbar navbar-light align-items-end ps-5">
-                        <div class="ms-4">
-                            <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-                            <button class="btn btn-outline-success bg-light" type="submit">Buscar</button>
-                            </form>
-                        </div>
-                    </nav> 
-                <div class="col-md-4 d-flex align-items-end justify-content-end">
-                        <a class="ms-4" href="https://api.whatsapp.com/send?phone=541164290191" target="_blank"><i class="fab fa-whatsapp fa-3x"></i></a>
-                        <a class="ms-4" href="#" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
-                        <a class="ms-4" href="#" target="_blank"><i class="fas fa-shopping-cart fa-3x"></i></a>
-                    </div>
-                </div>
-            </div>   
-            <div class="container-fluid border-top border-dark pt-3">
-                <div class="row">
-                    <nav class="col-md-12 d-flex align-items-end justify-content-center">
-                        <ul class="nav">
-                            <li class="nav-item"><a class="nav-link link-light"href="Hombres.html"> Hombres</a></li>
-                            <li class="nav-item"><a class="nav-link link-light"href="mujeres.html">Mujeres</a> </li>
-                            <li class="nav-item"><a class="nav-link link-light"href="contacto.html">Contacto</a> </li>
-                        </ul>
-                    </nav>
-                </div>
+    <header class="Head">
+        <div class="Marca">
+            <div>
+                <a class="desvanecer" href="index.html"><img src="imagen/estrella.png" width=120></a>
+            <h1 class="textoLogo"> ASTRO </h1>
             </div>
-        </header>
-        <section class="container-fluid d-flex align-items-center justify-content-start altura" >
-            <div class="row">
-                <div class="col-md-8 border border-3">
-                    <h3>Contacto</h3>
-                    <form action="" method="post" enctype="text/plain" class="d-flex flex-column">
+        </div>
+        <div class="Redes">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                <button class="btn btn-outline-success bg-light" type="submit">Buscar</button>
+            </form>
+        </div>
+        <div class="Redes">
+            <a href="https://api.whatsapp.com/send?phone=541164290191" target="_blank"><i class="fab fa-whatsapp fa-3x"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+            <a href="#" target="_blank"><i class="fas fa-shopping-cart fa-3x"></i></a>
+        </div>
+        
+    </header>
+    <nav class="NavList">
+        <ul>
+            <li><a href="Hombres.html"> Hombres</a></li>
+            <li><a href="mujeres.html">Mujeres</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+        </ul>
+        <div class="Hide">
+            <i class="fa fa-bars" aria-hidden="true"></i> Menu
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+    $(".Hide").on('click', function() {
+    $(".NavList ul").toggle('slow');
+    })
+    </script>
+        <section id="FondoContacto">
+                <form action="" method="post" enctype="text/plain" id="FormContacto">
+                    <h2>Contacto</h2>
                     <input type="text" name="nombre" placeholder="Ingrese su Nombre">
                     <input type="email" name="email" placeholder="Ingrese su Email">
-                    <select name="Genero">
-                    <option value="M">Masculino</option>
-                    <option value="F">Femenino</option>
-                    <option value="X">No-Binario</option>  
-                    </select>
-                    <input type="checkbox" name="Terminos" value="Terms">Acepta los terminos y condiciones
-                    <input type="checkbox" name="Merch"> Acepta el envío de publicidad y ofertas exclusivas a su correo 
-                    <input type="submit" name="Enviar">
-                    <input type="reset" name="borrar">
-                    </form> 
-                </div>
-            </div>
+                    <input type="text" name="Telefono" placeholder="Ingrese su Telefono">
+                    <textarea name="Mensaje" placeholder="Escriba su mensaje"></textarea>
+                    <input type="button" value="ENVIAR" id="boton">
+                </form>
         </section> 
         <footer class="container-fluid bg-success pb-2 pt-2">
-            <div class="row">
-                <div class="col-md-4 d-flex justify-content-start">
+            <div class="row d-flex justify-content-around">
+                <div class="col-md-6 d-flex justify-content-start">
                     <div>
                     <p style="color: white;">Suscribirse</p>
                     <form action="" method="Post" enctype="text/plain" class="d-flex align-items-center"> 

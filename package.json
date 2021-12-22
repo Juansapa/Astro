@@ -267,5 +267,13 @@
     "xdg-basedir": "^4.0.0",
     "yargs": "^13.3.2"
   },
-  "description": ""
+  "description": "<h1 align=\"center\">Hola, Buenas! Mi nombre es Juan Renedo</h1>\r <h3 align=\"center\">Soy un programador front-end y desarrollador</h3>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juansapa/Astro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Juansapa/Astro/issues"
+  },
+  "homepage": "https://github.com/Juansapa/Astro#readme"
 }

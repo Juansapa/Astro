@@ -11,46 +11,49 @@
 </head>
 <body>
     <div>
-        <header class="container-fluid p-3 bg-success">
-            <div class="container-fluid mb-3">
-                <div class="row">
-                    <div class="col-md-4 d-inline-flex">
-                    <a class="desvanecer" href="Index.html"><img src="imagen/estrella.png" width=120></a>
-                    <h1 class="textoLogo d-inline-flex align-items-end"> ASTRO </h1>
-                    </div>
-                    <nav class="col-md-4 navbar navbar-light align-items-end ps-5">
-                        <div class="ms-4">
-                            <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-                            <button class="btn btn-outline-success bg-light" type="submit">Buscar</button>
-                            </form>
-                        </div>
-                    </nav> 
-                <div class="col-md-4 d-flex align-items-end justify-content-end">
-                        <a class="ms-4" href="https://api.whatsapp.com/send?phone=541164290191" target="_blank"><i class="fab fa-whatsapp fa-3x"></i></a>
-                        <a class="ms-4" href="#" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
-                        <a class="ms-4" href="#" target="_blank"><i class="fas fa-shopping-cart fa-3x"></i></a>
-                    </div>
-                </div>
-            </div>   
-            <div class="container-fluid border-top border-dark pt-3">
-                <div class="row">
-                    <nav class="col-md-12 d-flex align-items-end justify-content-center">
-                        <ul class="nav" style="color: white">
-                            <li class="nav-item"><a class="nav-link link-light"href="Hombres.html"> Hombres</a></li>
-                            <li class="nav-item"><a class="nav-link link-light"href="mujeres.html">Mujeres</a> </li>
-                            <li class="nav-item"><a class="nav-link link-light"href="contacto.html">Contacto</a> </li>
-                        </ul>
-                    </nav>
+        <header class="Head">
+            <div class="Marca">
+                <div>
+                    <a class="desvanecer" href="index.html"><img src="imagen/estrella.png" width=120></a>
+                <h1 class="textoLogo"> ASTRO </h1>
                 </div>
             </div>
+            <div class="Redes">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                    <button class="btn btn-outline-success bg-light" type="submit">Buscar</button>
+                </form>
+            </div>
+            <div class="Redes">
+                <a href="https://api.whatsapp.com/send?phone=541164290191" target="_blank"><i class="fab fa-whatsapp fa-3x"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-shopping-cart fa-3x"></i></a>
+            </div>
+            
         </header>
-        <section class="container-fluid p-0 m-0 pb-5 ">
-            <img class="img-fluid" src="imagen/hombre.jpg" style="width: 100%;" alt="Banner Hombre">
+        <nav class="NavList">
+            <ul>
+                <li><a href="Hombres.html"> Hombres</a></li>
+                <li><a href="mujeres.html">Mujeres</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+            </ul>
+            <div class="Hide">
+                <i class="fa fa-bars" aria-hidden="true"></i> Menu
+            </div>
+        </nav>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+        $(".Hide").on('click', function() {
+        $(".NavList ul").toggle('slow');
+        })
+        </script>
+        <section class="container-fluid p-0 m-0 pb-5 Banner ">
+            <img class="img-fluid Banner" src="imagen/hombre.jpg" style="width: 100%;" alt="Banner Hombre">
         </section>
         <section class="container-fluid pb-5 pt-5">
             <div class="row">
-                <div class="col-md-3" >
+                <div class="col my-3" >
                     <div class="CardsSombra container-md pe-3">
                         <img src="imagen/ZapaHombrePumaNegra.jpg" class="card-img-top" alt="Zapatillas Hombre Puma Negra">
                         <div class="card-body">
@@ -60,7 +63,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col my-3">
                     <div class="CardsSombra container-md">
                         <img src="imagen/BuzoHombrePumaGyN.jpg" class="card-img-top" alt="Buzo Puma Hombre Gris y Negro">
                         <div class="card-body">
@@ -70,7 +73,7 @@
                         </div>
                     </div>
                 </div>    
-                <div class="col-md-3">
+                <div class="col my-3">
                     <div class="CardsSombra container-md">
                         <img src="imagen/RemeraHombreLacosteGris.jpg" class="card-img-top" alt="Remera Lacoste Hombre Gris">
                         <div class="card-body">
@@ -80,7 +83,7 @@
                         </div>
                     </div>
                 </div>   
-                <div class="col-md-3">
+                <div class="col my-3">
                     <div class="CardsSombra container-md">
                         <img src="imagen/PantalonHombreKappaNegro.jpg" class="card-img-top" alt="Pantalon Hombre Kappa Negro">
                         <div class="card-body">
@@ -92,7 +95,7 @@
                 </div>
         </section>
         <footer class="container-fluid bg-success pb-2">
-            <div class="row">
+            <div class="row d-flex justify-content-around">
                 <div class="col-md-4 d-flex justify-content-start">
                     <div>
                     <p style="color: white">Suscribirse</p>

@@ -10,77 +10,78 @@
     <title>Quienes-Somos</title>
 </head>
 <body>
-    <div>
-        <header class="container-fluid p-3 bg-success">
-            <div class="container-fluid mb-3">
-                <div class="row">
-                    <div class="col-md-4 d-inline-flex">
-                    <a class="desvanecer" href="Index.html"><img src="imagen/estrella.png" width=120></a>
-                    <h1 class="textoLogo d-inline-flex align-items-end"> ASTRO </h1>
-                    </div>
-                    <nav class="col-md-4 navbar navbar-light align-items-end ps-5">
-                        <div class="ms-4">
-                            <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-                            <button class="btn btn-outline-success bg-light" type="submit">Buscar</button>
-                            </form>
-                        </div>
-                    </nav> 
-                <div class="col-md-4 d-flex align-items-end justify-content-end">
-                        <a class="ms-4" href="https://api.whatsapp.com/send?phone=541164290191" target="_blank"><i class="fab fa-whatsapp fa-3x"></i></a>
-                        <a class="ms-4" href="#" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
-                        <a class="ms-4" href="#" target="_blank"><i class="fas fa-shopping-cart fa-3x"></i></a>
-                    </div>
-                </div>
-            </div>   
-            <div class="container-fluid border-top border-dark pt-3">
-                <div class="row">
-                    <nav class="col-md-12 d-flex align-items-end justify-content-center">
-                        <ul class="nav">
-                            <li class="nav-item"><a class="nav-link link-light"href="Hombres.html"> Hombres</a></li>
-                            <li class="nav-item"><a class="nav-link link-light"href="mujeres.html">Mujeres</a> </li>
-                            <li class="nav-item"><a class="nav-link link-light"href="contacto.html">Contacto</a> </li>
-                        </ul>
-                    </nav>
-                </div>
+    <header class="Head">
+        <div class="Marca">
+            <div>
+                <a class="desvanecer" href="index.html"><img src="imagen/estrella.png" width=120></a>
+            <h1 class="textoLogo"> ASTRO </h1>
             </div>
-        </header>
-        <section>
-            <section class="container-fluid p-0 m-0 pb-5 contenedor">
-                <img class="img-fluid portada" src="imagen/nosotros.jpg" style="width: 100%;">
-                <h2 class="TextoDentro">Sobre Nosotros</h2>
-            </section>
-            <div class="nosotros container-fluid">
-                <div class="row">
-                    <div class="col-md-3 Nosotros">
-                        <h3><strong>¿Quienes somos?</strong></h3>
-                        <p> <span>S</span>omos una empresa dedicada a la venta de indumentaria deportiva, especializada en futbol. <br>
-                        Aqui encontrarás camisetas, calzado deportivo, shorts e indumentaria ligada a los deportes mas populares del mundo. ¡Muchas gracias por su visita! </p>  
-                    </div>
-                </div>  
-            </div>
+        </div>
+        <div class="Redes">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                <button class="btn btn-outline-success bg-light" type="submit">Buscar</button>
+            </form>
+        </div>
+        <div class="Redes">
+            <a href="https://api.whatsapp.com/send?phone=541164290191" target="_blank"><i class="fab fa-whatsapp fa-3x"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+            <a href="#" target="_blank"><i class="fas fa-shopping-cart fa-3x"></i></a>
+        </div>
+        
+    </header>
+    <nav class="NavList">
+        <ul>
+            <li><a href="Hombres.html"> Hombres</a></li>
+            <li><a href="mujeres.html">Mujeres</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+        </ul>
+        <div class="Hide">
+            <i class="fa fa-bars" aria-hidden="true"></i> Menu
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+    $(".Hide").on('click', function() {
+    $(".NavList ul").toggle('slow');
+    })
+    </script>
+    <section>
+        <section class="container-fluid p-0 m-0 pb-5 contenedor">
+            <img class="img-fluid" src="imagen/nosotros.jpg" style="width: 110%;">
+            <h2 class="TextoDentro">Sobre Nosotros</h2>
         </section>
-        <footer class="container-fluid bg-success pb-2">
+        <div class="nosotros container-fluid">
             <div class="row">
-                <div class="col-md-4 d-flex justify-content-start">
-                    <div>
-                    <p style="color: white;">Suscribirse</p>
-                    <form action="" method="Post" enctype="text/plain" class="d-flex align-items-center"> 
-                    <input type="email" name="nombre" placeholder="Ingrese su Email" ><br><br>
-                    <input type="submit" name="Enviar" value="Enviar">
-                    </form>  
-                    </div>
+                <div class="col-md-3 Nosotros">
+                    <h3><strong>¿Quienes somos?</strong></h3>
+                    <p> <span>S</span>omos una empresa dedicada a la venta de indumentaria deportiva, especializada en futbol. <br>
+                    Aqui encontrarás camisetas, calzado deportivo, shorts e indumentaria ligada a los deportes mas populares del mundo. ¡Muchas gracias por su visita! </p>  
                 </div>
-                <div class= "col-md-6 d-flex align-items-center">
-                    <ul class="nav">
-                        <li class="nav-item"><a class="nav-link link-light" href="Nosotros.html">Acerca de AstroShop</a></li>
-                        <li class="nav-item"><a class="nav-link link-light" href="productos.html">Productos</a></li>
-                        <li class="nav-item"><a class="nav-link link-light" href="contacto.html">Contacto</a></li>
-                    </ul>      
+            </div>  
+        </div>
+    </section>
+    <footer class="container-fluid bg-success pb-2">
+        <div class="row d-flex justify-content-around">
+            <div class="col-md-4 d-flex justify-content-start">
+                <div>
+                    <form action="" method="Post" enctype="text/plain"> 
+                        <p style="color: white;">Suscribirse</p>
+                        <input type="email" name="nombre" placeholder="Ingrese su Email" ><br><br>
+                        <input type="submit" name="Enviar" value="Enviar">
+                    </form>  
                 </div>
             </div>
-        </footer>
-    </div>
+            <div class= "col-md-8 d-flex align-items-center">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link link-light" href="Nosotros.html">Acerca de AstroShop</a></li>
+                    <li class="nav-item"><a class="nav-link link-light" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link link-light" href="contacto.html">Contacto</a></li>
+                </ul>      
+            </div>
+        </div>
+    </footer>
     <script src="https://kit.fontawesome.com/7e9cc2adb6.js" crossorigin="anonymous"></script>   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
