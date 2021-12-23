@@ -210,12 +210,6 @@ textarea {
 .Nosotros {
   font-family: 'Poppins'; }
 
-.FlexNosotros {
-  display: flex;
-
-}
-
-
 .contenedor {
   position: relative;
   display: inline-block;
