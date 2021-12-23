@@ -107,6 +107,7 @@
 /*BODY*/
 
 
+
 .Carrusel {
   width: 100%; }
 
@@ -123,26 +124,12 @@ a {
     color: #16114b; }
 
 
-.Nosotros {
-  font-family: 'Poppins'; }
 
 span {
   font-size: 3em;
   font-family: serif; }
 
-.contenedor {
-  position: relative;
-  display: inline-block;
-  text-align: center; }
 
-.TextoDentro {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #4c944c;
-  width: 30%;
-  font-family: 'PT Sans', sans-serif; }
 
   h2 {
     font-family: 'PT Sans', sans-serif;
@@ -220,11 +207,29 @@ textarea {
 /*Nosotros*/
 
 
+.Nosotros {
+  font-family: 'Poppins'; }
 
+.FlexNosotros {
+  display: flex;
 
+}
 
+.TextoDentro {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #4c944c;
+  width: 30%;
+  font-family: 'PT Sans', sans-serif; }
 
-
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+ }
+  
 @media screen and (max-width: 770px) {
   .categorias {
     margin-bottom: 30px; }
