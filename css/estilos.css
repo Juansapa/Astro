@@ -164,7 +164,7 @@ span {
   padding-top: 30px;
 }
 
-#FormContacto {
+#FondoContacto form  {
   width: 450px;
   margin: auto;
   background: rgba(0,0,0, 0.3);
@@ -174,7 +174,7 @@ span {
   border-radius: 7px;
 }
 
-#FormContacto h2 {
+#FormContacto form h2 {
   color: #ffff;
   text-align: center;
   margin: 0;
@@ -215,7 +215,13 @@ textarea {
 
 }
 
-.TextoDentro {
+
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+ }
+.contenedor h2 {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -223,12 +229,9 @@ textarea {
   color: #4c944c;
   width: 30%;
   font-family: 'PT Sans', sans-serif; }
-
-.contenedor {
-  position: relative;
-  display: inline-block;
-  text-align: center;
- }
+}
+ 
+ .contenedor div 
   
 @media screen and (max-width: 770px) {
   .categorias {
